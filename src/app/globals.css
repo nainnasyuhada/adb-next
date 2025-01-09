@@ -7,15 +7,72 @@
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"],
+input[type="text"] {
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+input[type="number"]:hover,
+input[type="text"]:hover,
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border: 1px solid #f11fb9;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #171953;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.btn-primary,
+.btn-secondary:hover {
+  background-color: #f11fb9;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.btn-secondary,
+.btn-primary:hover {
+  background-color: #fff;
+  color: #f11fb9;
+  border: 1px solid #f11fb9;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.btn-primary:disabled {
+  background-color: rgba(77, 77, 77, 0.1);
+  color: rgba(77, 77, 77, 0.1);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1px solid rgba(77, 77, 77, 0.1);
 }
