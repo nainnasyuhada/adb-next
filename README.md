@@ -9,7 +9,7 @@
 
 1. Clone the repository:
    git clone https://github.com/nainnasyuhada/adb-next.git
-   cd todo-list-app
+   cd adb-next
 
 2. Install dependencies:
    npm install
@@ -19,3 +19,9 @@
 
 4. Open your browser and navigate to:
    http://localhost:3000
+
+### Key Technologies
+
+- NextJs with TypeScript: For building the app with strongly-typed components.
+- Tailwind CSS: For styling the application with modern and responsive designs.
+- React Hook Form: For managing and validating form inputs
