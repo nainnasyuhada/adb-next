@@ -24,12 +24,11 @@ export default function TwoSum() {
 
   const [output, setOutput] = React.useState<number[][] | null>(null);
 
-  // Number of input
   const onSubmit = (data: TwoSumFormValues) => {
     const { numberList, target } = data;
 
-    // convert user input into array of numbers
     if (numberList && target) {
+      // convert user input into array of numbers
       const arrayNo = numberList?.split(",").map((num) => Number(num));
 
       // const sortedArray = arrayNo.sort((a, b) => a - b);

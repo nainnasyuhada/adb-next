@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function MainMenu() {
   const buttonList = [
@@ -18,7 +18,14 @@ export default function MainMenu() {
     },
   ];
 
-  const path = window.location.pathname.split("/")[1];
+  const [path, setPath] = useState("");
+
+  useEffect(() => {
+    // This runs only on the client
+    const currentPath = window.location.pathname.split("/")[1];
+    setPath(currentPath);
+  }, []);
+
   const [selectedButton, setSelectedButton] = React.useState(path);
 
   return (
